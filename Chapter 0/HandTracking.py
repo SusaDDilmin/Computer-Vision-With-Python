@@ -28,7 +28,7 @@ while True:
                 cx , cy = int(lm.x * w) , int(lm.y * h) # get x , y coordinates of each landmark
                 print(id , cx , cy)
                 if id == 0: # Select 0th landmark
-                    cv2.circle(img , (cx , cy) , 25 , (255 , 0 , 255) , cv2.FILLED) # draw circle on 0th landmark
+                    cv2.circle(img , (cx , cy) , 15 , (255 , 0 , 255) , cv2.FILLED) # draw circle on 0th landmark
 
             mpDraw.draw_landmarks(img , handLms , mpHands.HAND_CONNECTIONS) # draw connections & landmarks
 
